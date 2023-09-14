@@ -21,23 +21,23 @@ O aplicativo estará escutando na porta `8080`. Você pode visitar no URL `http:
 
 o diretório de view contém o padrão DDD
 
-### `models`
+### `views/home/models`
 
 o diretório de models contém as tipagens referentes ao modulo
 
-### `routes`
+### `views/home/routes`
 
 o diretório de routes contém as rotas do modulo
 
-### `services`
+### `views/home/services`
 
 o diretório de services contém requisições com api, aqui está atrelado uma parte da regra de negócio
 
-### `store`
+### `views/home/store`
 
 o diretório de store contém as actions, mutations e state do módulo, de forma modular para ser importado ao store base da aplicação que fica em `src/store/modules.store.ts`
 
-### `widgtes`
+### `views/home/widgtes`
 
 o diretório de widgets contém pequenos compontes, como campo de pesquisa, modal de endereço e listagem
 
