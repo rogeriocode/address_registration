@@ -1,9 +1,10 @@
 export default {
   ADDRESS: 'Endereço',
   REGISTER_ADDRESS: 'Cadastrar Endereço',
+  UPDATE_ADDRESS: 'Editar Endereço',
   SEARCH_ADDRESS: 'Buscar Endereço',
   REGISTER: 'Cadastrar',
-  TYPE_YOUR_CEP: 'Digite seu CEP',
+  TYPE_YOUR_ZIP_CODE: 'Digite seu CEP',
   TO_SAVE: 'Salvar',
   TITLE: 'Titulo',
   PUBLIC_PLACE: 'Logradouro',
@@ -14,4 +15,10 @@ export default {
   REQUIRED_FIELD: 'Campo obrigatório',
   CANCEL: 'Cancelar',
   EMPTY_ADDRESS: 'Não encontramos o endereço, tente novamente!',
+  EMPTY_ADDRESS_LIST: 'Não encontramos endereço cadastrado',
+  TO_EDIT: 'Editar',
+  DELETE: 'Deletar',
+  TO_UPDATE: 'Atualizar',
+  CREATED: 'Criado:',
+  UPDATED: 'Atualizado:',
 };

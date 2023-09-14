@@ -1,9 +1,10 @@
 export default {
   ADDRESS: 'Address',
   REGISTER_ADDRESS: 'Register address',
+  UPDATE_ADDRESS: 'Update address',
   SEARCH_ADDRESS: 'Search Address',
   REGISTER: 'Register',
-  TYPE_YOUR_CEP: 'type your CEP',
+  TYPE_YOUR_ZIP_CODE: 'type your zip code',
   TO_SAVE: 'To Save',
   TITLE: 'Title',
   PUBLIC_PLACE: 'Public Place',
@@ -14,4 +15,10 @@ export default {
   REQUIRED_FIELD: 'Required field',
   CANCEL: 'Cancel',
   EMPTY_ADDRESS: 'We didn\'t find the address, try again!',
+  EMPTY_ADDRESS_LIST: 'We did not find a registered address',
+  TO_EDIT: 'To edit',
+  DELETE: 'Delete',
+  TO_UPDATE: 'To Update',
+  CREATED: 'Created:',
+  UPDATED: 'Updated:',
 };

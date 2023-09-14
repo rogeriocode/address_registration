@@ -1,6 +1,7 @@
 import { ActionContext } from 'vuex';
 
 export interface IAddress {
+  id: number;
   title: string;
   publicPlace: string;
   complement: string;
@@ -19,7 +20,9 @@ export interface IAddressState {
 
 export interface IAddressMutations {
   ADD_ADDRESS: (state: IAddressState, address: IAddress) => void;
+  UPDATE_ADDRESS: (state: IAddressState, address: IAddress) => void;
   SET_SEARCH_ADDRESS: (state: IAddressState, searchAddress: IAddress) => void;
+  DELETE_ADDRESS: (state: IAddressState, address: IAddress) => void;
   TOGGLE_VISIBLE_DIALOG_ADDRESS: (state: IAddressState) => void;
 }
 

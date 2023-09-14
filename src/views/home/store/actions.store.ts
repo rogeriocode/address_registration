@@ -6,13 +6,13 @@ import addressServices from '../services/address.service';
 export const actionsStore: IActionsStore = {
   async fetchAddress(context: ActionContext<IAddressState, unknown>, CEP: string): Promise<void> {
     const { commit } = context;
-    const cep = CEP.replace(/\./g, '');
+    const zipCode = CEP.replace(/\./g, '');
 
     try {
-      const data = await addressServices.getAddress(cep);
+      const data = await addressServices.getAddress(zipCode);
+
       if (data.erro) {
         notify('Não encontramos o endereço', 'error');
-        commit('SET_SEARCH_ADDRESS', null);
         return;
       }
 
@@ -25,14 +25,11 @@ export const actionsStore: IActionsStore = {
       } = data;
 
       const addressDTO = {
-        title: null,
         publicPlace,
         complement,
         neighborhood,
         locality,
         uf,
-        createDate: new Date(),
-        updateDate: null,
       };
 
       commit('SET_SEARCH_ADDRESS', addressDTO);
