@@ -6,3 +6,4 @@ declare module '*.vue' {
 
 declare module 'vue-notification';
 declare module 'v-mask';
+declare module '@jest/globals'

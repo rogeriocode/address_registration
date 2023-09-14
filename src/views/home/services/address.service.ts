@@ -1,7 +1,7 @@
 import { api } from '@/services/axios';
 
 class AddressServices {
-  constructor(private readonly $api = api) {}
+  constructor(public readonly $api = api) {}
 
   async getAddress(CEP: string) {
     try {
@@ -13,4 +13,4 @@ class AddressServices {
   }
 }
 
-export default new AddressServices();
+export default AddressServices;

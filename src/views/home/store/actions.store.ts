@@ -3,13 +3,15 @@ import { ActionContext } from 'vuex';
 import { IActionsStore, IAddressState } from '../models';
 import addressServices from '../services/address.service';
 
+const service = new addressServices();
+
 export const actionsStore: IActionsStore = {
   async fetchAddress(context: ActionContext<IAddressState, unknown>, CEP: string): Promise<void> {
     const { commit } = context;
     const zipCode = CEP.replace(/\./g, '');
 
     try {
-      const data = await addressServices.getAddress(zipCode);
+      const data = await service.getAddress(zipCode);
 
       if (data.erro) {
         notify('Não encontramos o endereço', 'error');

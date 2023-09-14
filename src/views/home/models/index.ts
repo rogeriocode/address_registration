@@ -1,5 +1,14 @@
 import { ActionContext } from 'vuex';
 
+export interface ISearchAddress {
+  cep: number | string,
+  logradouro: string,
+  complemento: string,
+  bairro: string,
+  localidade: string,
+  uf: string,
+}
+
 export interface IAddress {
   id: number;
   title: string;
